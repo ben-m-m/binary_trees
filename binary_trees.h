@@ -2,6 +2,10 @@
 #define BINARY_TREES_H
 
 #include <stdio.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
 
 
 /**
@@ -22,7 +26,9 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 
+void binary_tree_print(const binary_tree_t *);
+
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
 
-#endif BINARY_TREES_H
+#endif
